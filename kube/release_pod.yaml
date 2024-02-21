@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: release-nginx
+  labels:
+    name: release-nginx
+spec:
+  containers:
+  - name: release-nginx
+    image: nilamballal169/cloudethix_release_nginx_nilam:v1
+    ports:
+    - containerPort: 80
